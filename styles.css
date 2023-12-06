@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500;600;700&display=swap');
+
+
+p{
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+.modal {
+    display: flex;
+    display: none;
+    position: fixed;
+    z-index: 30;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    position: relative;
+    
+    margin: 5% auto;
+    margin-top: 200px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close {
+    position: absolute;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: black;
+  }
+  
+
+
+#contenedor-video {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Ajusta la altura según sea necesario */
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.heroImage {
+    background-image: url("./assets/images/speakingExtendedPhonesMini.jpg");
+    background-size: contain;
+    width: 100vw;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.imagen-centrada {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+   
+}
+
+.carrusel {
+    width: 90%;
+    overflow: hidden;
+}
+
+.marcas-container {
+    display: flex;
+    width: 1500px;
+    animation: desplazar 15s linear infinite; /* Ajusta la duración según la velocidad que desees */
+}
+
+.marcas {
+    display: flex;
+}
+
+.marca {
+    flex: 0 0 auto;
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    padding: 30px;
+   
+}
+
+.menu-hamburguesa {
+    width: 100vw;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #04143C;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.linea {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.menu-desplegable {
+    position: fixed;
+    top: 70px; /* Ajusta según la altura de tu menú hamburguesa */
+    left: 0;
+    width: 100%;
+    background-color: #04143C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-130%); /* Ajusta según sea necesario */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.menu-desplegable a {
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.menu-desplegable a:hover {
+    background-color: #555;
+}
+
+.menu-desplegable.mostrando {
+    transform: translateY(0);
+}
+
+.videoContanier{
+    width: 100%;
+    overflow: hidden;
+}
+
+.heroImage {
+    background-image:none;
+    
+}
+
+.brilla {
+  animation: shine 2s infinite; /* 2s de duración, repetición infinita */
+}
+
+@keyframes caidaDesdeArriba {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .elemento-caida {
+    animation: caidaDesdeArriba 1s ease-out;
+  }
+
+  @keyframes deslizamientoDesdeIzquierda {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .elemento-deslizamiento {
+    animation: deslizamientoDesdeIzquierda 1s ease-out;
+  }
+  
+@keyframes shine {
+    0% {
+      color: #ffd700; /* Color inicial (blanco en este caso) */
+    }
+    50% {
+      color: #04143C; /* Color intermedio (amarillo en este caso) */
+      font-size: 23px;
+    }
+    100% {
+      color: #ffd700; /* Color final (blanco en este caso) */
+    }
+  }
+
+
+@keyframes desplazar {
+    from {
+        transform: translateX(20%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@media (min-width: 768px) {
+    /* En pantallas más pequeñas, desactivar el efecto de fondo fijo */
+    .heroImage {
+        background-image: url("./assets/images/speakingExtended.jpg");
+        background-attachment:scroll;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    header{
+        height: 100vh;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+    .menu-desplegable {
+       display: none;
+    }
+    
+}
+
+@media (min-width: 1280px) {
+    /* En pantallas más pequeñas, desactivar el efecto de fondo fijo */
+
+    #contenedor-video {
+        position: relative;
+        width: 100%;
+        height: 680px; /* Ajusta la altura según sea necesario */
+        overflow: hidden;
+    }
+
+    @keyframes desplazar {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+   
+}

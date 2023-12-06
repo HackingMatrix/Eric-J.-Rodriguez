@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Eric J. Rodriguez</title>
+</head>
+<body class="">
+    <header class="heroImage">
+        <div class=" h-20 md:hidden"><div class="menu-hamburguesa" onclick="toggleMenu()">
+                <div class="linea"></div>
+                <div class="linea"></div>
+                <div class="linea"></div>
+            </div>
+            <div class="menu-desplegable" id="menuDesplegable">
+                <a href="#">Meet Eric</a>
+                <a href="#">Speaking</a>
+                <a href="#">Podcast</a>
+            </div>
+        </div>
+        <div class="flex justify-between my-5 md:my-0 mx-5 content-center items-center text-white ">
+            <img class="w-28 h-20 2xl:ml-10" src="../assets/images/ERIC+logo+SMALL.png" alt="">
+            <div class="hidden md:block">
+                <ul class="flex items-center elemento-caida">
+                    <li class="px-6 md:text-lg 2xl:text-2xl">Meet Eric</li>
+                    <li class="px-6 md:text-lg 2xl:text-2xl">Speaking</li>
+                    <li class="px-6 md:text-lg 2xl:text-2xl">Podcast</li>
+                </ul>
+            </div>
+            <button class="bg-amber-400 rounded-3xl px-5 py-3 2xl:mr-10"><a href="https://calendly.com/ericjrodriguez/">Book Eric</a></button>
+        </div>
+        <div class="relative">
+            <div class="absolute top-16 left-10 md:top-28 md:left-24 lg:left-52 elemento-deslizamiento">
+                <h1 class="text-3xl md:text-6xl lg:text-6xl 2xl:text-7xl text-white whitespace-pre-line pb-5 drop-shadow-md md:pb-10">Ideas for the 
+                <div class="decoration-amber-400 underline underline-offset-8">future</div></h1>
+                    <div class="flex-col md:flex">
+                        <div class="pb-2"><button class="border-2 rounded-3xl text-lg md:text-2xl md:mb-10 2xl:mb-5 text-white p-2 hover:text-secondary hover:bg-primary bg-secondary bg-opacity-50">Partner With Me</button></div>
+                        <div><button class="border-2 rounded-3xl text-lg md:text-2xl md:mb-10 text-white p-2 hover:text-secondary hover:bg-primary drop-shadow-lg bg-secondary bg-opacity-50">Watch The Video</button></div>
+                    </div>
+                <ul class="flex text-white pt-5">
+                    <li class="border-r-2 pr-2 border-primary drop-shadow-md text-lg md:text-2xl ">SPEAKER</li>
+                    <li class="border-r-2 px-2 border-primary drop-shadow-md text-lg md:text-2xl ">LEADER</li>
+                    <li class="pl-2 drop-shadow-md text-lg md:text-2xl ">MENTOR</li>
+                </ul>
+            </div>
+        <img src="../assets/images/speakingExtendedPhonesMini.jpg" alt="Imagen Recortada" class="imagen-centrada md:hidden">
+        </div>
+        
+    </header>
+<section>
+    <div class="bg-secondary rounded-3xl h-5 mx-20 my-20 md:hidden"></div>
+    <div class="text-center whitespace-pre-line mb-24 text-secondary text-2xl px-5 md:my-44 md:text-6xl" data-aos="zoom-in">
+            “IN A WORLD THAT’S
+            CONSTANTLY EVOLVING, IT’S UP TO US TO <span class="text-primary">CREATE MEANINGFUL CONNECTIONS </span>AND UPLIFT ONE
+            ANOTHER ALONG THE WAY”
+    </div>
+    <div id="contenedor-video" class="flex justify-center">
+        <button id="openModalBtn" class="absolute top-52 z-20 border-2 rounded-3xl text-lg text-white p-2 hover:text-secondary hover:bg-primary bg-secondary bg-opacity-50">Watch The Video</button>
+        <video class="opacity-90" id="video-background" autoplay loop muted>
+        <source src="../assets/videos/EJRSizzle.mp4" type="video/mp4">
+        <!-- Agrega más fuentes de video según sea necesario -->
+        </video>
+    </div>
+<!-- Modal -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModalBtn">&times;</span>
+    <!-- Insertar el iframe del video aquí -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-Mp4OPamXt4" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>   
+</section>
+    <section class="2xl:my-48">
+
+        <div class="flex justify-center mt-16 2xl:mb-10">
+            <span class="decoration-amber-400 underline underline-offset-8 text-2xl 2xl:text-3xl">Clients</span>
+        </div>
+        
+        <div class="flex justify-center">
+            
+            <div class="carrusel my-12">
+                <div class="marcas-container">
+                    
+                    <div class="marcas marcas-1">
+                        <img src="../assets/images/Intel-logo-2022.png" alt="" class="marca">
+                        <img src="../assets/images/jmg-logo.png" alt="" class="marca">
+                        <img src="../assets/images/AMS+Logo.png" alt="" class="marca">
+                        <img src="../assets/images/ASML_Holding_N.V._logo.svg" alt="" class="marca">
+                        <img src="../assets/images/1200px-Deloitte.svg.png" alt="" class="marca">
+                        <img src="../assets/images/logo.png" alt="" class="marca">
+                        <img src="../assets/images/download-the-report-harvard-business-review-logo-11562888144xlmldgm2dm.png" alt="" class="marca">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-gradient-to-br from-orange-700 to-yellow-500 mt-24 mb-24 2xl:py-16 rounded-xl">
+            <div  class="flex justify-center">
+                <span class="justify-self-center pb-8 pt-14 text-white decoration-secondary underline underline-offset-8 text-2xl 2xl:text-3xl">Meet Eric</span>
+            </div>
+            <div class="md:flex md:justify-evenly">
+                <div class="flex justify-center " data-aos="flip-left">
+                    <img src="../assets/images/EricIndoorProfile Suit.jpg" alt="" class="w-72 pb-14 pt-5">
+                </div>
+                <div>
+                    <p class="text-center whitespace-pre-line text-lg pb-24" data-aos="flip-right">
+                        “IN A WORLD THAT’S
+                        CONSTANTLY EVOLVING, IT’S UP
+                        TO US TO CREATE MEANINGFUL
+                        CONNECTIONS AND UPLIFT ONE
+                        ANOTHER ALONG THE WAY”
+                    </p> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="keynotes" >
+        <div class="flex justify-center my-12 2xl:my-28">
+            <span class="decoration-amber-400 underline underline-offset-8 text-2xl 2xl:text-3xl">Keynotes</span>
+        </div>
+        <div class="xl:flex">
+
+            <div class="bg-gradient-to-br from-secondary to-teal-900 rounded-2xl mx-10 my-7 p-5 text-center grid text-primary">
+                <p class="pb-4">Keynote</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, sunt. Error exercitationem veniam possimus, vitae laboriosam nostrum facere sed obcaecati vel quis quae a deserunt voluptatem doloribus illo praesentium animi.</p>
+                <img src="../assets/images/signo-circular-mas.png" alt="" class="w-14 justify-self-center pt-7 pb-4">
+            </div>
+            <div class="bg-gradient-to-tr from-secondary to-teal-900 rounded-2xl mx-10 my-7 p-5 text-center grid text-primary">
+                <p class="pb-4">Keynote</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, sunt. Error exercitationem veniam possimus, vitae laboriosam nostrum facere sed obcaecati vel quis quae a deserunt voluptatem doloribus illo praesentium animi.</p>
+                <img src="../assets/images/signo-circular-mas.png" alt="" class="w-14 justify-self-center pt-7 pb-4">
+            </div>
+            <div class="bg-gradient-to-tl from-secondary to-teal-900 rounded-2xl mx-10 my-7 p-5 text-center grid text-primary">
+                <p class="pb-4">Keynote</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, sunt. Error exercitationem veniam possimus, vitae laboriosam nostrum facere sed obcaecati vel quis quae a deserunt voluptatem doloribus illo praesentium animi.</p>
+                <img src="../assets/images/signo-circular-mas.png" alt="" class="w-14 justify-self-center pt-7 pb-4">
+            </div>
+        </div>
+    </section>
+    <div class="mt-20 mb-10 relative">
+        <h1 class="absolute top-36 right-10 text-3xl 2xl:top-2/4 2xl:right-64 2xl:text-8xl text-white whitespace-pre-line">Ideas for the 
+            <div class="decoration-white underline underline-offset-8">Future</div></h1>
+        <img src="../assets/images/MVSpeakinPic2Mini.jpg" alt="" class="imagen-centrada">
+    </div>
+    <section>
+
+    </section>
+    <section class="2xl:my-32">
+        <div class="flex justify-center mb-12 mt-12 2xl:mt-0 2xl:mb-36">
+            <span class="decoration-amber-400 underline underline-offset-8 text-2xl 2xl:text-6xl font-sans" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">Awards</span>
+        </div>
+        <div class="text-center">
+
+            <ul class="md:flex justify-around mb-10 font-sans font-medium text-2xl md:text-3xl">
+                <li class="whitespace-pre-line py-5 brilla">
+                    Arizona 40 Under 40
+
+                </li>
+                <li class="whitespace-pre-line py-5 brilla">Young Hispanic 
+                    Corporate Achiever
+
+                </li>
+            <li class="whitespace-pre-line py-5 brilla">Distinguished Young 
+                Engineering Alumni 
+            
+            </li>
+        </ul>
+    </div>
+
+    </section>
+    <footer>
+        <div class="bg-gradient-to-t from-secondary to-teal-900 rounded-t-md text-white">
+            <div class="flex justify-evenly py-20">
+                <img src="../assets/images/png-transparent-instagram-computer-icons-instagram-white-text-logo.png" alt="" class="w-10 h-10">
+                <img src="../assets/images/logotipo-circular-de-facebook.png" alt="" class="w-10 h-10">
+                <img src="../assets/images/png-transparent-computer-icons-logo-linkedin-logopsd-source-files-angle-text-rectangle.png" alt="" class="w-10 h-10">
+                <img src="../assets/images/5ca98c73b2bb7a02bf8350933c7ca443.png" alt="" class="w-10 h-10">
+            </div>
+            <div class="flex text-right justify-around 2xl:justify-evenly 2xl:text-center">
+                <div>
+
+                    <ul>
+                        <li>Home</li>
+                        <li>Meet Eric</li>
+                        <li>Speaking</li>
+                        <li>Podcast</li>
+                    </ul>
+                </div>
+                <div>
+
+                    <span class="whitespace-pre-line">Eric delivers dynamic and impactful presentations, 
+                        making complex topics accessible
+                        with his engaging communication style. 
+                        Known for his charisma and expertise, 
+                        he leaves a lasting impression on audiences</span>
+                </div>
+            </div>
+                
+                <!-- Formulario de Contacto -->
+                <form action="procesar_formulario.php" method="post" class="py-10">
+                    
+                
+                <!-- Correo Electrónico -->
+                <div class="m-4 pb-10 2xl:mx-40">
+                    <label for="email" class="block text-primary text-sm font-bold mb-2 ">Contact Eric</label>
+                    <input placeholder="johndoe@gmail.com" type="email" name="email" id="email" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500" required>
+                </div>
+                
+                
+                
+                <!-- Botón de Enviar -->
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">Enviar</button>
+                </div>
+                
+            </form>
+            
+            <div class="text-center">
+
+                <span class="text-sm">Privacy Policy | © 2023 Eric J. Rodriguez. All Rights Reserved.</span>
+            </div>
+    </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
