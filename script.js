@@ -24,3 +24,8 @@ window.onclick = function(event) {
     videoModal.style.display = 'none';
   }
 }
+
+function redirect() {
+  // Cambia "otraPagina.html" con la ruta de tu otra página HTML
+  window.location.href = "contacto.html";
+}

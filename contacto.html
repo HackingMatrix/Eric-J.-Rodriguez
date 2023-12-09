@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Oscuro</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-800 text-white h-screen fondoContact">
+  <div class="justify-between my-5 md:my-0 mx-5 content-center items-center text-white ">
+    <div class="flex justify-center">
+
+      <a href="index.html"><img class="w-28 h-20 2xl:ml-10" src="./assets/images/ERIC+logo+SMALL.png" alt=""></a>
+    </div>
+    <div class="flex justify-center">
+        <ul class="flex items-center elemento-caida">
+            <li class="px-6 md:text-lg 2xl:text-2xl">Meet Eric</li>
+            <li class="px-6 md:text-lg 2xl:text-2xl">Speaking</li>
+            <li class="px-6 md:text-lg 2xl:text-2xl">Podcast</li>
+        </ul>
+    </div>
+</div>
+
+<div class="flex justify-center mt-10">
+  <div class="bg-gray-700 p-8 rounded shadow-md w-full md:w-96">
+    <h2 class="text-2xl font-bold mb-4">Mi Formulario</h2>
+    
+    <!-- Formulario -->
+    <form>
+      <div class="mb-4">
+        <label for="nombre" class="block text-sm font-semibold text-gray-300">Nombre</label>
+        <input type="text" id="nombre" name="nombre" class="w-full border border-gray-600 bg-gray-600 rounded px-3 py-2 mt-1 focus:outline-none focus:border-blue-400">
+      </div>
+      
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-semibold text-gray-300">Correo Electrónico</label>
+        <input type="email" id="email" name="email" class="w-full border border-gray-600 bg-gray-600 rounded px-3 py-2 mt-1 focus:outline-none focus:border-blue-400">
+      </div>
+
+      <div class="mb-4">
+        <label for="mensaje" class="block text-sm font-semibold text-gray-300">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" class="w-full border border-gray-600 bg-gray-600 rounded px-3 py-2 mt-1 focus:outline-none focus:border-blue-400"></textarea>
+      </div>
+      
+      <button type="submit" class="bg-blue-500 hover:bg-blue-600 active:bg-blue-800 text-white px-4 py-2 rounded focus:outline-none focus:shadow-outline-blue">Enviar</button>
+    </form>
+  </div>
+</div>
+  
+</body>
+</html>

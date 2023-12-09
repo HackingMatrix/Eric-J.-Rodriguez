@@ -8,7 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Eric J. Rodriguez</title>
 </head>
-<body class="">
+<body class="overflow-x-hidden">
     <header class="heroImage">
         <div class=" h-20 md:hidden"><div class="menu-hamburguesa" onclick="toggleMenu()">
                 <div class="linea"></div>
@@ -21,7 +21,7 @@
                 <a href="#">Podcast</a>
             </div>
         </div>
-        <div class="flex justify-between my-5 md:my-0 mx-5 content-center items-center text-white ">
+        <div class="flex justify-between  md:pt-4 mx-5 content-center items-center text-white ">
             <img class="w-28 h-20 2xl:ml-10" src="./assets/images/ERIC+logo+SMALL.png" alt="">
             <div class="hidden md:block">
                 <ul class="flex items-center elemento-caida">
@@ -30,15 +30,15 @@
                     <li class="px-6 md:text-lg 2xl:text-2xl">Podcast</li>
                 </ul>
             </div>
-            <button class="bg-amber-400 rounded-3xl px-5 py-3 2xl:mr-10"><a href="https://calendly.com/ericjrodriguez/">Book Eric</a></button>
+            <button class="bg-amber-400 rounded-3xl px-5 py-3 2xl:mr-10 hover:scale-110 hover:bg-primary duration-300" onclick="redirect()">Book Eric</button>
         </div>
         <div class="relative">
             <div class="absolute top-16 left-10 md:top-28 md:left-24 lg:left-52 elemento-deslizamiento">
                 <h1 class="text-3xl md:text-6xl lg:text-6xl 2xl:text-7xl text-white whitespace-pre-line pb-5 drop-shadow-md md:pb-10">Ideas for the 
                 <div class="decoration-amber-400 underline underline-offset-8">future</div></h1>
                     <div class="flex-col md:flex">
-                        <div class="pb-2"><button class="border-2 rounded-3xl text-lg md:text-2xl md:mb-10 2xl:mb-5 text-white p-2 hover:text-secondary hover:bg-primary bg-secondary bg-opacity-50">Partner With Me</button></div>
-                        <div><button class="border-2 rounded-3xl text-lg md:text-2xl md:mb-10 text-white p-2 hover:text-secondary hover:bg-primary drop-shadow-lg bg-secondary bg-opacity-50">Watch The Video</button></div>
+                        <div class="pb-2"><button class="border-2 rounded-3xl text-lg md:text-2xl md:mb-10 2xl:mb-5 text-white p-2 hover:text-secondary hover:bg-primary bg-secondary bg-opacity-50" onclick="redirect()">Partner With Me</button></div>
+                        <div><a href="#video-background"><button class="border-2 rounded-3xl text-lg md:text-2xl md:mb-10 text-white p-2 hover:text-secondary hover:bg-primary drop-shadow-lg bg-secondary bg-opacity-50">Watch The Video</button></a></div>
                     </div>
                 <ul class="flex text-white pt-5">
                     <li class="border-r-2 pr-2 border-primary drop-shadow-md text-lg md:text-2xl ">SPEAKER</li>
@@ -52,18 +52,19 @@
     </header>
 <section>
     <div class="bg-secondary rounded-3xl h-5 mx-20 my-20 md:hidden"></div>
-    <div class="text-center whitespace-pre-line mb-24 text-secondary text-2xl px-5 md:my-44 md:text-6xl" data-aos="zoom-in">
+    <div class="text-center whitespace-pre-line mb-24 text-secondary text-2xl px-5 md:my-44 md:text-5xl" data-aos="zoom-in">
             “IN A WORLD THAT’S
             CONSTANTLY EVOLVING, IT’S UP TO US TO <span class="text-primary">CREATE MEANINGFUL CONNECTIONS </span>AND UPLIFT ONE
             ANOTHER ALONG THE WAY”
     </div>
-    <div id="contenedor-video" class="flex justify-center">
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/892098810?h=77ec3ee65f&autoplay=1&color=04143C&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <!--<div id="contenedor-video" class="flex justify-center">
         <button id="openModalBtn" class="absolute top-52 z-20 border-2 rounded-3xl text-lg text-white p-2 hover:text-secondary hover:bg-primary bg-secondary bg-opacity-50">Watch The Video</button>
         <video class="opacity-90" id="video-background" autoplay loop muted>
         <source src="./assets/videos/EJRSizzle.mp4" type="video/mp4">
-        <!-- Agrega más fuentes de video según sea necesario -->
+        
         </video>
-    </div>
+    </div> -->
 <!-- Modal -->
 <div id="videoModal" class="modal">
   <div class="modal-content">
@@ -99,51 +100,62 @@
         </div>
     </section>
     <section>
-        <div class="bg-gradient-to-br from-orange-700 to-yellow-500 mt-24 mb-24 2xl:py-16 rounded-xl">
-            <div  class="flex justify-center">
-                <span class="justify-self-center pb-8 pt-14 text-white decoration-secondary underline underline-offset-8 text-2xl 2xl:text-3xl">Meet Eric</span>
+        <div class="bg-gradient-to-br from-orange-700 to-yellow-500 mt-24 mb-24 2xl:py-16 rounded-xl flex flex-col items-center">
+            <div class="flex justify-center">
+              <span class="justify-self-center pb-14 pt-8 text-white decoration-secondary underline underline-offset-8 text-2xl 2xl:text-3xl">Meet Eric</span>
             </div>
-            <div class="md:flex md:justify-evenly">
-                <div class="flex justify-center " data-aos="flip-left">
-                    <img src="./assets/images/EricIndoorProfile Suit.jpg" alt="" class="w-72 pb-14 pt-5">
-                </div>
-                <div>
-                    <p class="text-center whitespace-pre-line text-lg pb-24" data-aos="flip-right">
-                        “IN A WORLD THAT’S
-                        CONSTANTLY EVOLVING, IT’S UP
-                        TO US TO CREATE MEANINGFUL
-                        CONNECTIONS AND UPLIFT ONE
-                        ANOTHER ALONG THE WAY”
-                    </p> 
-                </div>
+            <div class="flex justify-evenly items-center flex-wrap w-full max-w-screen-xl" data-aos="flip-left">
+              <img src="./assets/images/EricIndoorProfile Suit.jpg" alt="" class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-72 pb-14 pt-5 flex-shrink-0">
+              <p class="text-center text-white md:text-justify text-xl lg:text-2xl pb-24 whitespace-pre-line" data-aos="flip-right">
+                Welcome to a realm where the future 
+                of human experience and transformative 
+                ideas intersect. In our constantly 
+                evolving world, Eric J. Rodriguez stands 
+                at the forefront of fostering connection, 
+                inspiration, and visionary leadership. 
+                His mission is to guide and empower leaders 
+                and innovators in navigating the complexities 
+                of the digital age, while emphasizing the 
+                essence of shared human experiences.
+              </p> 
             </div>
-        </div>
+          </div>
+          
+          
     </section>
     <section id="keynotes" >
         <div class="flex justify-center my-12 2xl:my-28">
             <span class="decoration-amber-400 underline underline-offset-8 text-2xl 2xl:text-3xl">Keynotes</span>
         </div>
         <div class="xl:flex">
-
-            <div class="bg-gradient-to-br from-secondary to-teal-900 rounded-2xl mx-10 my-7 p-5 text-center grid text-primary">
-                <p class="pb-4">Keynote</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, sunt. Error exercitationem veniam possimus, vitae laboriosam nostrum facere sed obcaecati vel quis quae a deserunt voluptatem doloribus illo praesentium animi.</p>
-                <img src="./assets/images/signo-circular-mas.png" alt="" class="w-14 justify-self-center pt-7 pb-4">
-            </div>
-            <div class="bg-gradient-to-tr from-secondary to-teal-900 rounded-2xl mx-10 my-7 p-5 text-center grid text-primary">
-                <p class="pb-4">Keynote</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, sunt. Error exercitationem veniam possimus, vitae laboriosam nostrum facere sed obcaecati vel quis quae a deserunt voluptatem doloribus illo praesentium animi.</p>
-                <img src="./assets/images/signo-circular-mas.png" alt="" class="w-14 justify-self-center pt-7 pb-4">
-            </div>
-            <div class="bg-gradient-to-tl from-secondary to-teal-900 rounded-2xl mx-10 my-7 p-5 text-center grid text-primary">
-                <p class="pb-4">Keynote</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, sunt. Error exercitationem veniam possimus, vitae laboriosam nostrum facere sed obcaecati vel quis quae a deserunt voluptatem doloribus illo praesentium animi.</p>
-                <img src="./assets/images/signo-circular-mas.png" alt="" class="w-14 justify-self-center pt-7 pb-4">
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative bg-gradient-to-br from-secondary to-teal-900 rounded-2xl mx-10 my-7 p-5 text-center text-primary overflow-y-auto flex flex-col justify-between">
+                    <div>
+                      <p class="pb-4">Empathy in the Digital Era: Humanizing Our Technological Future</p>
+                      <p>Explores the synergy between technology and empathy, emphasizing the need for humanizing technology in our rapidly digitizing world.</p>
+                    </div>
+                    <img src="./assets/images/signo-circular-mas.png" alt="" class="w-14 mx-auto pb-4">
+                  </div>
+                  <div class="relative bg-gradient-to-br from-secondary to-teal-900 rounded-2xl mx-10 my-7 p-5 text-center text-primary overflow-y-auto flex flex-col justify-between">
+                    <div>
+                      <p class="pb-4">Resilience in Disruption: Thriving in Rapid Change</p>
+                      <p> Focusing on resilience, this keynote addresses how to thrive amidst constant change and disruption. Rodriguez shares insights on embracing adaptability and transformation as crucial for success in both personal and professional life.</p>
+                    </div>
+                    <img src="./assets/images/signo-circular-mas.png" alt="" class="w-14 mx-auto pb-4">
+                  </div>
+                  <div class="relative bg-gradient-to-br from-secondary to-teal-900 rounded-2xl mx-10 my-7 p-5 text-center text-primary overflow-y-auto flex flex-col justify-between">
+                    <div>
+                      <p class="pb-4">The Ethics of Innovation: Navigating Technology with a Moral Compass</p>
+                      <p> This presentation explores the ethical considerations of technological advancements and the importance of moral values in guiding innovation to benefit society as a whole.</p>
+                    </div>
+                    <img src="./assets/images/signo-circular-mas.png" alt="" class="w-14 mx-auto pb-4">
+                  </div>
+              </div>
+              
         </div>
     </section>
-    <div class="mt-20 mb-10 relative">
-        <h1 class="absolute top-36 right-10 text-3xl 2xl:top-2/4 2xl:right-64 2xl:text-8xl text-white whitespace-pre-line">Ideas for the 
+    <div class="mt-20 mb-10 relative ">
+        <h1 class="absolute top-36 right-10 text-3xl 2xl:top-2/4 2xl:right-64 2xl:text-8xl text-white whitespace-pre-line desvane">Ideas for the 
             <div class="decoration-white underline underline-offset-8">Future</div></h1>
         <img src="./assets/images/MVSpeakinPic2Mini.jpg" alt="" class="imagen-centrada">
     </div>
@@ -151,24 +163,26 @@
 
     </section>
     <section class="2xl:my-32">
-        <div class="flex justify-center mb-12 mt-12 2xl:mt-0 2xl:mb-36">
+        <div class="flex justify-center mb-12 mt-12 2xl:mt-0 2xl:mb-24">
             <span class="decoration-amber-400 underline underline-offset-8 text-2xl 2xl:text-6xl font-sans" data-aos="fade-up"
-            data-aos-anchor-placement="top-center">Awards</span>
+            data-aos-anchor-placement="top-center">Achievements</span>
         </div>
         <div class="text-center">
-
-            <ul class="md:flex justify-around mb-10 font-sans font-medium text-2xl md:text-3xl">
-                <li class="whitespace-pre-line py-5 brilla">
-                    Arizona 40 Under 40
-
-                </li>
-                <li class="whitespace-pre-line py-5 brilla">Young Hispanic 
-                    Corporate Achiever
-
-                </li>
-            <li class="whitespace-pre-line py-5 brilla">Distinguished Young 
-                Engineering Alumni 
             
+            <ul class="md:flex justify-around mb-10 font-sans font-medium text-2xl md:text-3xl">
+                <li class="whitespace-pre-line py-5 brilla typoLocuaz">
+                    <img src="./assets/images/medalla2.png" alt="" class="w-20">
+                    Arizona 40 Under 40
+                </li>
+                <li class="whitespace-pre-line py-5 brilla typoLocuaz">
+                    <img src="./assets/images/medalla2.png" alt="" class="w-20">
+                    Young Hispanic 
+                    Corporate Achiever
+                </li>
+            <li class="whitespace-pre-line py-5 brilla typoLocuaz">
+                <img src="./assets/images/medalla2.png" alt="" class="w-20">
+                Distinguished Young 
+                Engineering Alumni 
             </li>
         </ul>
     </div>
