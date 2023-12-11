@@ -2,30 +2,30 @@ function toggleMenu() {
     var menuDesplegable = document.getElementById("menuDesplegable");
     menuDesplegable.classList.toggle("mostrando");
 }
-// Obtener elementos del DOM
-var openModalBtn = document.getElementById('openModalBtn');
-var closeModalBtn = document.getElementById('closeModalBtn');
-var videoModal = document.getElementById('videoModal');
 
-// Mostrar modal al hacer clic en el botón de abrir
-openModalBtn.onclick = function() {
-  videoModal.style.display = 'block';
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
 }
 
-// Cerrar modal al hacer clic en la "X"
-closeModalBtn.onclick = function() {
-  videoModal.style.display = 'none';
-  
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
 }
 
-// Cerrar modal si se hace clic fuera del contenido
+// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target === videoModal) {
-    videoModal.style.display = 'none';
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
 
-function redirect() {
-  // Cambia "otraPagina.html" con la ruta de tu otra página HTML
-  window.location.href = "contacto.html";
-}

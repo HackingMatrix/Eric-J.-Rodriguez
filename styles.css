@@ -1,11 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500;600;700&family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300;400;500;600&family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500;600;700&family=Nova+Square&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 p{
     font-family: 'Fredoka', sans-serif;
 }
 
 .typoLocuaz{
-  font-family: 'Nova Square', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+.typoParrafos {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
+.typoBotones{
+  font-family: 'Neuzeit Grotesk';
+  src: url('NeuzeitGro-Reg.eot');
+  src: local('Neuzeit Grotesk Regular'), local('NeuzeitGro-Reg'),
+      url('NeuzeitGro-Reg.eot?#iefix') format('embedded-opentype'),
+      url('NeuzeitGro-Reg.woff2') format('woff2'),
+      url('NeuzeitGro-Reg.woff') format('woff'),
+      url('NeuzeitGro-Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .fondoContact{
@@ -15,32 +33,44 @@ p{
         background-position: center;
 }
 
+/* The Modal (background) */
 .modal {
-    display: flex;
-    display: none;
-    position: fixed;
-    z-index: 30;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.7);
-  }
-  
-  .modal-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    position: relative;
-    
-    margin: 5% auto;
-    margin-top: 200px;
-    width: 80%;
-    max-width: 600px;
-  }
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 10px;
+  background-color:azure;
+  margin: 50% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
   
   .close {
     position: absolute;
@@ -64,15 +94,6 @@ p{
     overflow: hidden;
 }
 
-#video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
 
 .heroImage {
     background-image: url("./assets/images/speakingExtendedPhonesMini.jpg");
@@ -92,13 +113,13 @@ p{
 }
 
 .carrusel {
-    width: 90%;
+    width: 99%;
     overflow: hidden;
 }
 
 .marcas-container {
     display: flex;
-    width: 1500px;
+    width: 3200px;
     animation: desplazar 15s linear infinite; /* Ajusta la duración según la velocidad que desees */
 }
 
@@ -108,7 +129,7 @@ p{
 
 .marca {
     flex: 0 0 auto;
-    width: 200px; /* Ajusta el ancho según sea necesario */
+    width: 340px; /* Ajusta el ancho según sea necesario */
     padding: 30px;
    
 }
@@ -161,17 +182,17 @@ p{
 }
 
 .menu-desplegable.mostrando {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .videoContanier{
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .heroImage {
-    background-image:none;
-    
+  background-image:none;
+  
 }
 
 .brilla {
@@ -181,6 +202,31 @@ p{
 .desvane{
   animation: desvanecer 1.5s infinite;
 }
+
+.swiper {
+  width: 100%px;
+  height:auto;
+}
+
+.swiper .swiper-button-prev {
+  --swiper-theme-color: #F5AC1A;
+  height: 30px;
+  width: 30px;
+}
+
+.swiper .swiper-button-next {
+  --swiper-theme-color: #F5AC1A;
+  height: 30px;
+  width: 30px;
+}
+
+.swiper .swiper-pagination {
+  --swiper-theme-color: #04143C;
+}
+
+/*.altura-personalizada {
+  
+}*/
 
 @keyframes caidaDesdeArriba {
     0% {
@@ -264,6 +310,11 @@ p{
        display: none;
     }
     
+    .marcas-container {
+      display: flex;
+      width: 2700px;
+      animation: desplazar 15s linear infinite; /* Ajusta la duración según la velocidad que desees */
+  }
 }
 
 @media (min-width: 1280px) {
@@ -284,5 +335,84 @@ p{
             transform: translateX(-100%);
         }
     }
+
+    .marcas-container {
+      display: flex;
+      width: 1500px;
+      animation: desplazar 15s linear infinite; /* Ajusta la duración según la velocidad que desees */
+  }
    
 }
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('NeuzeitGroExt-Bla.eot');
+  src: local('Neuzeit Grotesk Extra-condensed Black'), local('NeuzeitGroExt-Bla'),
+      url('NeuzeitGroExt-Bla.eot?#iefix') format('embedded-opentype'),
+      url('NeuzeitGroExt-Bla.woff2') format('woff2'),
+      url('NeuzeitGroExt-Bla.woff') format('woff'),
+      url('NeuzeitGroExt-Bla.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('NeuzeitGro-Bla.eot');
+  src: local('Neuzeit Grotesk Black'), local('NeuzeitGro-Bla'),
+      url('NeuzeitGro-Bla.eot?#iefix') format('embedded-opentype'),
+      url('NeuzeitGro-Bla.woff2') format('woff2'),
+      url('NeuzeitGro-Bla.woff') format('woff'),
+      url('NeuzeitGro-Bla.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('NeuzeitGro-Reg.eot');
+  src: local('Neuzeit Grotesk Regular'), local('NeuzeitGro-Reg'),
+      url('NeuzeitGro-Reg.eot?#iefix') format('embedded-opentype'),
+      url('NeuzeitGro-Reg.woff2') format('woff2'),
+      url('NeuzeitGro-Reg.woff') format('woff'),
+      url('NeuzeitGro-Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('NeuzeitGro-Lig.eot');
+  src: local('Neuzeit Grotesk Light'), local('NeuzeitGro-Lig'),
+      url('NeuzeitGro-Lig.eot?#iefix') format('embedded-opentype'),
+      url('NeuzeitGro-Lig.woff2') format('woff2'),
+      url('NeuzeitGro-Lig.woff') format('woff'),
+      url('NeuzeitGro-Lig.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('NeuzeitGro-Bol.eot');
+  src: local('Neuzeit Grotesk Bold'), local('NeuzeitGro-Bol'),
+      url('NeuzeitGro-Bol.eot?#iefix') format('embedded-opentype'),
+      url('NeuzeitGro-Bol.woff2') format('woff2'),
+      url('NeuzeitGro-Bol.woff') format('woff'),
+      url('NeuzeitGro-Bol.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('NeuzeitGroCon-Bla.eot');
+  src: local('Neuzeit Grotesk Condensed Black'), local('NeuzeitGroCon-Bla'),
+      url('NeuzeitGroCon-Bla.eot?#iefix') format('embedded-opentype'),
+      url('NeuzeitGroCon-Bla.woff2') format('woff2'),
+      url('NeuzeitGroCon-Bla.woff') format('woff'),
+      url('NeuzeitGroCon-Bla.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
