@@ -29,3 +29,8 @@ window.onclick = function(event) {
   }
 }
 
+// Función que se ejecuta al hacer clic en el botón
+function redirect() {
+  // Redirige a la página especificada (reemplaza "pagina-especifica.html" con tu URL)
+  window.location.href = "contacto.html";
+}

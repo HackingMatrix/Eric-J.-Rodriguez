@@ -5,48 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario Oscuro</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body class="bg-gray-800 text-white h-screen fondoContact">
-  <div class="justify-between my-5 md:my-0 mx-5 content-center items-center text-white ">
-    <div class="flex justify-center">
-
-      <a href="index.html"><img class="w-28 h-20 2xl:ml-10" src="./assets/images/ERIC+logo+SMALL.png" alt=""></a>
-    </div>
-    <div class="flex justify-center">
-        <ul class="flex items-center elemento-caida">
-            <li class="px-6 md:text-lg 2xl:text-2xl">Meet Eric</li>
-            <li class="px-6 md:text-lg 2xl:text-2xl">Speaking</li>
-            <li class="px-6 md:text-lg 2xl:text-2xl">Podcast</li>
+<body class="bg-slate-800 text-white">
+  <header class="relative flex flex-col items-center heroImageContact">
+    <img src="assets/images/Intel Talk NextGen UpdatedCutted.jpg" alt="" class="opacity-30 md:hidden">
+    <div class="flex flex-col items-center absolute top-0 text-white w-full">
+      <div class="flex justify-center">
+        <a href="index.html"><img class="w-28  py-3" src="./assets/images/ERIC+logo+SMALL-PRIMARY.png" alt=""></a>
+      </div>
+      <div class="flex justify-center">
+        <ul class="flex items-center elemento-caida typoBotones">
+          <li class="px-6 md:text-lg 2xl:text-2xl">Meet Eric</li>
+          <li class="px-6 md:text-lg 2xl:text-2xl">Speaking</li>
+          <li class="px-6 md:text-lg 2xl:text-2xl">Podcast</li>
         </ul>
+      </div>
     </div>
+    <div class="animar-subrayado absolute bottom-32 xsm:bottom-1/2 xl:bottom-72 lg:bottom-72 md:bottom-64 md:text-5xl lg:text-7xl 2xl:text-8xl text-2xl whitespace-pre-line text-center typoLocuaz">Are you ready to step 
+      in into the future?</div>
+  </header>
+  <section>
+    <form class="">
+        <div class="bg-white mx-5 md:mx-28 md:my-20 my-5 xl:mx-80  py-10 px-10 rounded-xl text-black flex flex-col xl:items-center">
+        <span class="typoLocuaz text-4xl">How can Eric help?</span>
+        <!-- Checkboxes -->
+        <label class="typoBotones py-5 text-primary">
+            <input type="checkbox" name="opcion1" > <span>Inspire &amp; activate innovation through customized keynotes</span>
+        </label>
+        <label class="typoBotones py-5 text-primary">
+            <input type="checkbox" name="opcion2"> <span>Apply &amp; scale innovation capabilities through hands-on workshops</span>
+        </label>
+        <label class="typoBotones py-5 text-primary">
+            <input type="checkbox" name="opcion3"><span>Build &amp; nurture innovation cultures through bespoke consulting solutions</span>
+        </label>
+        <label class="typoBotones py-5 text-primary">
+            <input type="checkbox" name="opcion4"><span>Media, PR &amp; podcast requests</span>
+        </label>
+        <label class="typoBotones py-5 text-primary">
+            <input type="checkbox" name="opcion5"> <span>Collaborate on a start-up or special project</span>
+        </label>
+        <label class="typoBotones py-5 text-primary">
+          <input type="checkbox" name="opcion6"> <span>Other</span>
+      </label>
 </div>
+      <div class="bg-white mx-5 md:mx-28 md:my-20 xl:mx-80 my-5 py-10 px-10 rounded-xl text-black flex flex-col ">
+        <div class="flex justify-center">
+        <span class="typoLocuaz text-4xl justify-self-center">Your Information</span>
+      </div>
+        <!-- Campos normales -->
+        <label class="typoParrafos py-5 2xl:px-72">
+            Name:
+            <input type="text" name="nombre" required class="rounded-lg w-full border-primary border">
+        </label >
+        <label class="typoParrafos py-5 2xl:px-72">
+            E-mail:
+            <input type="email" name="email" required class="rounded-lg w-full border-primary border">
+        </label>
+        <label class="typoParrafos py-5 2xl:px-72">
+          Organization:
+          <input type="text" name="organization-name" required class="rounded-lg w-full border-primary border">
+      </label>
+      <label class="typoParrafos py-5 2xl:px-72">
+        Phone:
+        <input type="number" name="number" required class="rounded-lg w-full border-primary border">
+    </label>
 
-<div class="flex justify-center mt-10">
-  <div class="bg-gray-700 p-8 rounded shadow-md w-full md:w-96">
-    <h2 class="text-2xl font-bold mb-4">Mi Formulario</h2>
-    
-    <!-- Formulario -->
-    <form>
-      <div class="mb-4">
-        <label for="nombre" class="block text-sm font-semibold text-gray-300">Nombre</label>
-        <input type="text" id="nombre" name="nombre" class="w-full border border-gray-600 bg-gray-600 rounded px-3 py-2 mt-1 focus:outline-none focus:border-blue-400">
-      </div>
-      
-      <div class="mb-4">
-        <label for="email" class="block text-sm font-semibold text-gray-300">Correo Electrónico</label>
-        <input type="email" id="email" name="email" class="w-full border border-gray-600 bg-gray-600 rounded px-3 py-2 mt-1 focus:outline-none focus:border-blue-400">
-      </div>
 
-      <div class="mb-4">
-        <label for="mensaje" class="block text-sm font-semibold text-gray-300">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="4" class="w-full border border-gray-600 bg-gray-600 rounded px-3 py-2 mt-1 focus:outline-none focus:border-blue-400"></textarea>
-      </div>
+        <input type="submit" value="Enviar">
       
-      <button type="submit" class="bg-blue-500 hover:bg-blue-600 active:bg-blue-800 text-white px-4 py-2 rounded focus:outline-none focus:shadow-outline-blue">Enviar</button>
+      </div>
+        
     </form>
-  </div>
-</div>
-  
+    </div>
+  </section>
 </body>
 </html>
+
