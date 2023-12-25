@@ -34,3 +34,11 @@ function redirect() {
   // Redirige a la página especificada (reemplaza "pagina-especifica.html" con tu URL)
   window.location.href = "contacto.html";
 }
+
+function toggleElement(numero) {
+  var elemento = document.getElementById("elemento" + numero);
+  var mas = document.querySelector("#elemento" + numero + " + .mas");
+
+  elemento.classList.toggle("mostrando");
+  mas.classList.toggle("expandido");
+}

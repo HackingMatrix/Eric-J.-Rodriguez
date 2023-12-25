@@ -106,8 +106,9 @@ p{
 
 
 .imagen-centrada {
-    width: 100%;
-    height: 30%;
+  
+   
+    
     object-fit: cover;
    
 }
@@ -236,6 +237,14 @@ p{
 
 }
 
+.fixedBackground {
+  background-image: url("assets/images/EricMentor2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 30%;
+}
+
 .aboutimage{
   background-image: url("./assets/images/EricMentor.jpg");
   background-attachment:scroll;
@@ -282,6 +291,33 @@ p{
     width: 100%;
   }
 }
+
+.lista {
+  list-style-type: none;
+}
+
+.mas {
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.mas.expandido {
+  transform: rotate(45deg);
+}
+
+.contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.contenido.mostrando {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-height: 300px; /* Ajusta la altura máxima según sea necesario */
+}
+
 .texto-vertical {
   writing-mode: vertical-rl; /* "rl" significa de derecha a izquierda */
   text-orientation: upright;
@@ -380,6 +416,14 @@ p{
     }
 }
 
+@media (min-width: 500px) {
+  /* En pantallas más pequeñas, desactivar el efecto de fondo fijo */
+  .imagen-centradaAbout {
+    width: 45%;
+  }
+  
+}
+
 @media (min-width: 768px) {
     /* En pantallas más pequeñas, desactivar el efecto de fondo fijo */
     .heroImage {
@@ -404,6 +448,8 @@ p{
       background-size: cover;
       background-position: center;
   }
+
+  
   
     header{
         height: 100vh;

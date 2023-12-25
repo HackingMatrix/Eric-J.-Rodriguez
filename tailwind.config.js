@@ -8,7 +8,7 @@ module.exports = {
         // Aquí puedes agregar tus colores personalizados
         primary: '#F5AC1A', // Por ejemplo, un color llamado "primary"
         secondary: '#04143C', // Otro color llamado "secondary"
-        customColor: '#ff00ff', // Un color personalizado
+        customColor: '#d6a700', // Un color personalizado
       },
       fontFamily: {
         sans: ['IBM Plex Sans Thai Looped', 'sans-serif'],
