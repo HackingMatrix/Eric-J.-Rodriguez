@@ -352,6 +352,8 @@ p{
   --swiper-theme-color: #04143C;
 }
 
+#globe-container { width: 100%; height: 100vh; }
+
 /*.altura-personalizada {
   
 }*/

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <title>Eric J. Rodriguez</title>
+</head>
+<body class="overflow-x-hidden bg-primary">
+    <header class="heroImage">
+        <div class=" h-20 md:hidden "><div class="menu-hamburguesa" onclick="toggleMenu()">
+            <img src="assets/images/barra-de-menus.png" alt="" class="w-12">
+        </div>
+        <div class="menu-desplegable" id="menuDesplegable">
+            <a href="index.html" class="typoBotones">HOME</a>
+            <a href="about.html" class="typoBotones">MEET ERIC</a>
+            <a href="speaking.html" class="typoBotones">SPEAKING</a>
+            <a href="coaching.html" class="typoBotones">COACHING</a>
+        </div>
+    </div>
+    </header>
+<section class="h-screen flex flex-col items-center justify-center pb-20">
+    <img src="assets/images/podcaster.png" alt="" class="w-56" >
+    <p class="typoLocuaz py-7 text-4xl">PODCAST</p>
+    <p class="text-justify px-20 ">Dive into Eric's world of insightful discussions and thought-provoking topics. Join him on his podcast journey, where he shares wisdom, explores diverse subjects, and engages in meaningful conversations. Unlock a treasure trove of knowledge and inspiration with every episode.</p>
+</section>
+<section class="h-screen flex flex-col items-center justify-center ">
+    <img src="assets/images/libro-abierto.png" alt="" class="w-56" data-aos="flip-right">
+    <p class="typoLocuaz py-7 text-4xl" data-aos="fade-right">BOOKS</p>
+    <p class="text-justify px-20 " data-aos="fade-right">Discover the books that fuel Eric's intellect and enrich his perspectives. Explore a curated list of reads that complement and enhance the themes of his lectures. From timeless classics to contemporary gems, these recommendations provide valuable insights to deepen your understanding of Eric's teachings.</p>
+</section>
+<section class="h-screen flex flex-col items-center justify-center pb-20">
+    <img src="assets/images/video.png" alt="" class="w-56" data-aos="flip-right">
+    <p class="typoLocuaz py-7 text-4xl" data-aos="fade-right">CONTENT</p>
+    <p class="text-justify px-20 " data-aos="fade-right">Experience Eric's concepts come to life through engaging videos. Delve into a visual journey that captures the essence of his ideas and philosophy. From keynote highlights to in-depth explorations, these videos offer a dynamic and immersive way to connect with Eric's transformative content.</p>
+</section>
+    
+        <footer>
+            <div class="bg-secondary py-56 px-10 flex flex-col items-center text-center md:py-72 ">
+                 <p class="pb-10 typoParrafos text-white text-2xl md:text-4xl"><span class="text-4xl">“</span>Disruption is not a storm to be weathered, but a wave to be ridden<span class="text-4xl">”</span></p>
+            
+            <button class="typoBotones py-3 px-3 bg-primary rounded-full text-white md:text-2xl" onclick="redirect()">Parter With Erick</button>
+        </div>
+            <div class="lg:bg-primary lg:bg-opacity-90 bg-primary text-white">
+                <div class="flex justify-evenly py-10">
+                    <img src="./assets/images/png-transparent-instagram-computer-icons-instagram-white-text-logo.png" alt="" class="w-10 h-10">
+                    <img src="./assets/images/logotipo-circular-de-facebook.png" alt="" class="w-10 h-10">
+                    <img src="./assets/images/png-transparent-computer-icons-logo-linkedin-logopsd-source-files-angle-text-rectangle.png" alt="" class="w-10 h-10">
+                    <img src="./assets/images/5ca98c73b2bb7a02bf8350933c7ca443.png" alt="" class="w-10 h-10">
+                </div>
+               
+                    <div class="pb-10">
+                        
+                        <ul class="px-10 flex justify-evenly typoBotones lg:text-2xl">
+                            <li>Home</li>
+                            <li>Meet Eric</li>
+                            <li>Speaking</li>
+                            <li>Podcast</li>
+                        </ul>
+                    </div>
+                    
+                <div class="flex justify-center pb-5">
+                    <img src="./assets/images/ERIC+logo+SMALL.png" alt="" class="w-44">
+                </div>
+                    
+                    <!-- Formulario de Contacto -->
+                    
+                    <div class="text-center pb-10">
+                        
+                        <span class="text-sm">Privacy Policy | © 2023 Eric J. Rodriguez. All Rights Reserved.</span>
+                    </div>
+                </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+    delay: 5000,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false,
+  },
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  effect: 'cards',
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+      </script>
+    <script>
+        AOS.init();
+        </script>
+</body>
+</html>
