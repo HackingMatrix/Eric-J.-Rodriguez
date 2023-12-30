@@ -264,6 +264,14 @@ p{
   background-image: none;
 }
 
+.heroImageSpeaking{
+  background-image: none;
+}
+
+.heroImageCoaching{
+  background-image: none;
+}
+
 .flecha {
   left: 186px;
 }
@@ -427,6 +435,10 @@ p{
 }
 
 @media (min-width: 768px) {
+
+  .imagen-centradaAbout {
+    width: 27%;
+  }
     /* En pantallas más pequeñas, desactivar el efecto de fondo fijo */
     .heroImage {
         background-image: url("./assets/images/speakingExtended.jpg");
@@ -451,7 +463,19 @@ p{
       background-position: center;
   }
 
-  
+  .heroImageSpeaking{
+    background-image: url("./assets/images/MV\ Speaking\ Pic\ 2.jpg");
+    background-attachment:scroll;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .heroImageCoaching{
+    background-image: url("./assets/images/EricMentor3.jpg");
+    background-attachment:scroll;
+      background-size: cover;
+      background-position: center;
+  }
   
     header{
         height: 100vh;

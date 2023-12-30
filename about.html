@@ -13,7 +13,7 @@
     <title>Eric J. Rodriguez</title>
 </head>
 <body class="overflow-x-hidden bg-gray-200">
-    <header class="heroImageAbout">
+    <header class="heroImageAbout md:flex flex-col md:justify-between max-md:items-center max-md:justify-center">
         <div class=" h-20 md:hidden "><div class="menu-hamburguesa" onclick="toggleMenu()">
             <img src="assets/images/barra-de-menus.png" alt="" class="w-12">
         </div>
@@ -24,25 +24,35 @@
             <a href="coaching.html" class="typoBotones">COACHING</a>
         </div>
     </div>
-       
+    <div class="hidden md:flex justify-between md:pt-0 px-5 mb-2 content-center items-center text-white ">
+        <img class="w-32 2xl:ml-10 py-5" src="./assets/images/ERIC+logo+SMALL.png" alt="">
+        <div class=" pb-5">
+            <ul class="flex items-center elemento-caida typoBotones">
+                <a href="about.html"><li class="px-6 md:text-xl 2xl:text-2xl">Meet Eric</li></a>
+                <a href="speaking.html"><li class="px-6 md:text-xl 2xl:text-2xl">Speaking</li></a>
+                <li class="px-6 md:text-xl 2xl:text-2xl">Podcast</li>
+            </ul>
+        </div>
+        <button class="bg-amber-400 rounded-3xl md:rounded-full px-5 py-3 2xl:mr-10 hover:scale-110 hover:bg-primary duration-300 typoBotones md:text-lg 2xl:text-xl" onclick="redirect()">Book Eric</button>
+    </div>
 
         <div class="relative  flex items-center justify-center bg-gray-950 rounded-sm">
 
         
         
-        <img src="assets/images/Eric Mentor 3.jpg" alt="" class="opacity-70 z-10 rounded-sm">
+        <img src="assets/images/Eric Mentor 3.jpg" alt="" class="opacity-70 z-10 rounded-sm md:hidden">
         <div class="flex flex-col items-center absolute">
         
         
-        <span class="justify-self-center pb-4 pt-24 text-white decoration-secondary decoration-4 underline underline-offset-8 font-bold text-6xl 2xl:text-3xl typoLocuaz z-20">Welcome</span>
+        <span class="justify-self-center pb-4 md:pt-0 pt-24 text-white decoration-secondary decoration-4 underline underline-offset-8 font-bold text-6xl 2xl:text-7xl typoLocuaz z-20">Welcome</span>
         
-        <p class="text-center px-5 xsm:text-xl md:text-2xl typoLocuaz font-thin text-4xl text-white z-20 ">
+        <p class="text-center px-5 xsm:text-2xl md:text-3xl 2xl:text-5xl typoLocuaz font-thin text-4xl text-white z-20 ">
            LET'S MEET ERIC
             
             </p>
         </div>
     </div>
-    <p class="text-center text-2xl px-10 typoParrafos py-24 xsm:py-44">
+    <p class="text-center md:text-primary md:pb-52 md:py-0 md:px-80 text-2xl px-10 typoParrafos py-24 xsm:py-44">
        His mission is to guide and empower leaders 
     and innovators in navigating the complexities 
     of the digital age, while emphasizing the 
@@ -50,18 +60,18 @@
     </p>
     </header>
     <section class="relative bg-white">
-        <div class=" 2xl:py-16  flex flex-col items-center relative altura-personalizada">
-            <div class="flex justify-center absolute left-14 top-10">
-                <span class="justify-self-center pb-8 pt-14  text-5xl 2xl:text-3xl typoLocuaz  text-secondary typoLocuaz desvane whitespace-pre-line text-center">This is 
+        <div class="  flex flex-col items-center relative altura-personalizada">
+            <div class="flex justify-center max-md:absolute left-14 top-10">
+                <span class="justify-self-center pb-8 pt-14  text-5xl 2xl:text-8xl 2xl:pl-7 typoLocuaz  text-secondary typoLocuaz desvane max-md:whitespace-pre-line text-center">This is 
                     Me</span>
             </div>
-            <div class="flex justify-end pt-10">
-                <img src="./assets/images/Capa 2.png" alt="Imagen Recortada" class="imagen-centradaAbout md:hidden right-0  bottom-0-36 z-10">
+            <div class="flex max-md:justify-end justify-center pt-10">
+                <img src="./assets/images/Capa 2.png" alt="Imagen Recortada" class="imagen-centradaAbout border-r-4  right-0  bottom-0-36 z-10">
             </div>
             
         </div>
         
-        <div class="flex justify-evenly items-center flex-wrap w-full max-w-screen-xl bg-gray-200" >
+        <div class="flex justify-evenly items-center flex-wrap w-full  bg-gray-200" >
             
             <p class="text-justify md:text-justify text-2xl lg:text-2xl pb-16 typoParrafos px-14 py-20" data-aos="fade-up">
 Eric J. Rodriguez's transformative journey began in Ecuador, where a culture shock at the age of eleven fueled a lifelong passion for leveraging technology as a bridge to close gaps and create opportunities.
@@ -74,7 +84,7 @@ Eric J. Rodriguez's transformative journey began in Ecuador, where a culture sho
     </section>
     <section class=" bg-gray-100">
         
-        <div class="flex flex-col text-2xl text-justify py-10 justify-evenly items-center flex-wrap w-full max-w-screen-xl bg-gray-100" >
+        <div class="flex flex-col text-2xl text-justify py-10 justify-evenly items-center flex-wrap w-full bg-gray-100" >
             <h2 class="pb-5 typoLocuaz text-4xl text-secondary">Eric's Propouse</h2>
             <span class="py-10 typoLocuaz text-3xl text-primary " data-aos="fade-right">Inspire</span>
             <p class="px-10 typoParrafos" data-aos="zoom-in">Ignite resilience and embrace change for growth. Our speaker shares stories, encouraging thriving amidst disruption. Discover the power to turn adversity into strength, fostering resilience beyond professional and personal spheres.</p>
@@ -89,7 +99,7 @@ Eric J. Rodriguez's transformative journey began in Ecuador, where a culture sho
        
         <span class=" text-primary text-5xl typoLocuaz" data-aos="fade-down">Unleashing Potential: Lifelong Learning with Eric</span>
     </div>
-    <div class="flex justify-evenly items-center flex-wrap w-full max-w-screen-xl bg-gray-200" >
+    <div class="flex justify-evenly items-center flex-wrap w-full bg-gray-200" >
             
         <p class="text-justify md:text-justify text-2xl lg:text-2xl pb-16 typoParrafos px-14 py-20" data-aos="fade-down">
             As a speaker and consultant, Eric seamlessly blends technical expertise with empathetic leadership, empowering organizations to embrace technological advancement while staying grounded in human values. His mission is to shape a future where technology and humanity coexist harmoniously, inspiring others to create a world where technology amplifies human potential. With a BS in Electrical Engineering and an MBA, Eric's story transcends credentials, focusing on making a meaningful impact and guiding others to create a world where technology enriches the human experience.
