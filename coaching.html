@@ -13,7 +13,7 @@
     <title>Eric J. Rodriguez</title>
 </head>
 <body class="overflow-x-hidden bg-primary">
-    <header class="heroImageCoaching">
+    <header class="heroImageCoaching md:flex md:flex-col  justify-between">
         <div class=" h-20 md:hidden "><div class="menu-hamburguesa" onclick="toggleMenu()">
             <img src="assets/images/barra-de-menus.png" alt="" class="w-12">
         </div>
@@ -24,21 +24,36 @@
             <a href="coaching.html" class="typoBotones">COACHING</a>
         </div>
     </div>
+    <div class="hidden md:flex justify-between md:pt-0 px-5 mb-2 content-center items-center text-white ">
+        <img class="w-40 2xl:ml-10 py-5" src="./assets/images/logoEricOficialNegro.png" alt="">
+        <div class=" pb-5">
+            <ul class="flex items-center elemento-caida typoBotones">
+                <a href="about.html"><li class="px-6 md:text-xl 2xl:text-2xl text-black">Meet Eric</li></a>
+                <a href="speaking.html"><li class="px-6 md:text-xl 2xl:text-2xl  text-black">Speaking</li></a>
+                <li class="px-6 md:text-xl 2xl:text-2xl  text-black">Coaching</li>
+            </ul>
+        </div>
+        <button class="bg-amber-400 rounded-3xl md:rounded-full px-5 py-3 2xl:mr-10 hover:scale-110 hover:bg-primary duration-300 typoBotones md:text-lg 2xl:text-xl" onclick="redirect()">Book Eric</button>
+    </div>
+    <div class="max-md:hidden flex flex-col items-center justify-center pb-64">
+        <h1 class="py-5 text-7xl text-white typoLocuaz">Come and learn with me</h1>
+        <h2 class="py-5 text-3xl text-white typoParrafos">Here you can explore more about the places I go to learn and expand my knowledge</h2>
+    </div>
     </header>
-<section class="h-screen flex flex-col items-center justify-center pb-20">
+<section class="h-screen flex flex-col items-center justify-center max-md:pb-20">
     <img src="assets/images/podcaster.png" alt="" class="w-56" >
     <p class="typoLocuaz py-7 text-4xl">PODCAST</p>
-    <p class="text-justify px-20 ">Dive into Eric's world of insightful discussions and thought-provoking topics. Join him on his podcast journey, where he shares wisdom, explores diverse subjects, and engages in meaningful conversations. Unlock a treasure trove of knowledge and inspiration with every episode.</p>
+    <p class="text-justify px-10 xsm:px-20 2xl:px-72">Dive into Eric's world of insightful discussions and thought-provoking topics. Join him on his podcast journey, where he shares wisdom, explores diverse subjects, and engages in meaningful conversations. Unlock a treasure trove of knowledge and inspiration with every episode.</p>
 </section>
 <section class="h-screen flex flex-col items-center justify-center ">
     <img src="assets/images/libro-abierto.png" alt="" class="w-56" data-aos="flip-right">
     <p class="typoLocuaz py-7 text-4xl" data-aos="fade-right">BOOKS</p>
-    <p class="text-justify px-20 " data-aos="fade-right">Discover the books that fuel Eric's intellect and enrich his perspectives. Explore a curated list of reads that complement and enhance the themes of his lectures. From timeless classics to contemporary gems, these recommendations provide valuable insights to deepen your understanding of Eric's teachings.</p>
+    <p class="text-justify px-10 xsm:px-20  2xl:px-72" data-aos="fade-right">Discover the books that fuel Eric's intellect and enrich his perspectives. Explore a curated list of reads that complement and enhance the themes of his lectures. From timeless classics to contemporary gems, these recommendations provide valuable insights to deepen your understanding of Eric's teachings.</p>
 </section>
 <section class="h-screen flex flex-col items-center justify-center pb-20">
     <img src="assets/images/video.png" alt="" class="w-56" data-aos="flip-right">
     <p class="typoLocuaz py-7 text-4xl" data-aos="fade-right">CONTENT</p>
-    <p class="text-justify px-20 " data-aos="fade-right">Experience Eric's concepts come to life through engaging videos. Delve into a visual journey that captures the essence of his ideas and philosophy. From keynote highlights to in-depth explorations, these videos offer a dynamic and immersive way to connect with Eric's transformative content.</p>
+    <p class="text-justify px-10 xsm:px-20 2xl:px-72 " data-aos="fade-right">Experience Eric's concepts come to life through engaging videos. Delve into a visual journey that captures the essence of his ideas and philosophy. From keynote highlights to in-depth explorations, these videos offer a dynamic and immersive way to connect with Eric's transformative content.</p>
 </section>
     
         <footer>
@@ -66,7 +81,7 @@
                     </div>
                     
                 <div class="flex justify-center pb-5">
-                    <img src="./assets/images/ERIC+logo+SMALL.png" alt="" class="w-44">
+                    <img src="./assets/images/logoEricOficialBlancoVariante.png" alt="" class="w-56">
                 </div>
                     
                     <!-- Formulario de Contacto -->
