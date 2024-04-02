@@ -10,6 +10,8 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
     <title>Eric J. Rodriguez</title>
 </head>
 <body class="overflow-x-hidden bg-gray-200">
@@ -25,12 +27,12 @@
         </div>
     </div>
     <div class="hidden md:flex justify-between md:pt-0 px-5 mb-2 content-center items-center text-white ">
-        <img class="w-40 2xl:ml-10 py-5" src="./assets/images/logoEricOficialNegro.png" alt="">
+        <a href="index.html"><img class="w-40 2xl:ml-10 py-5" src="./assets/images/logoEricOficialNegro.png" alt=""></a>
         <div class=" pb-5">
             <ul class="flex items-center elemento-caida typoBotones">
                 <a href="about.html"><li class="px-6 md:text-xl 2xl:text-2xl">Meet Eric</li></a>
                 <a href="speaking.html"><li class="px-6 md:text-xl 2xl:text-2xl">Speaking</li></a>
-                <li class="px-6 md:text-xl 2xl:text-2xl">Podcast</li>
+                <a href="coaching.html"><li class="px-6 md:text-xl 2xl:text-2xl">Coaching</li></a>
             </ul>
         </div>
         <button class="bg-amber-400 rounded-3xl md:rounded-full px-5 py-3 2xl:mr-10 hover:scale-110 hover:bg-primary duration-300 typoBotones md:text-lg 2xl:text-xl" onclick="redirect()">Book Eric</button>
@@ -71,12 +73,12 @@
             
         </div>
         
-        <div class="flex justify-evenly items-center flex-wrap w-full  bg-gray-200" >
+        <div class="flex justify-evenly items-center flex-wrap w-full lg:py-40 bg-gray-200" >
             
-            <p class="text-justify md:text-justify text-2xl lg:text-2xl pb-16 typoParrafos px-14 py-20" data-aos="fade-up">
+            <p class="text-justify md:text-justify text-2xl lg:text-2xl pb-16 typoParrafos px-14" data-aos="fade-up">
 Eric J. Rodriguez's transformative journey began in Ecuador, where a culture shock at the age of eleven fueled a lifelong passion for leveraging technology as a bridge to close gaps and create opportunities.
             </p> 
-            <p class="text-justify md:text-justify text-2xl lg:text-2xl pb-16 typoParrafos px-14 " data-aos="fade-up">
+            <p class="text-justify md:text-justify text-2xl lg:text-2xl typoParrafos px-14 " data-aos="fade-up">
                 His pivotal moment in seventh grade, witnessing the introduction of the school's first computer lab, set the stage for a career dedicated to the positive impact of technology. From serving as the Education Regional Director at Intel, influencing lives globally, to his commitment in organizations like Aguila Youth and SHPE, Eric's path reflects resilience, innovation, and an unwavering drive to make a difference.
                             </p> 
         </div>
@@ -95,24 +97,24 @@ Eric J. Rodriguez's transformative journey began in Ecuador, where a culture sho
         </div class="relative">
         
     </section>
-    <div class="fixedBackground h-96 flex justify-center items-center text-center">
+    <div class="fixedBackground h-screen py-36 flex justify-center items-center text-center">
        
-        <span class=" text-primary text-5xl typoLocuaz" data-aos="fade-down">Unleashing Potential: Lifelong Learning with Eric</span>
+        <span class=" text-primary text-5xl typoLocuaz my-28" data-aos="fade-down">Unleashing Potential: Lifelong Learning with Eric</span>
     </div>
     <div class="flex justify-evenly items-center flex-wrap w-full bg-gray-200" >
             
-        <p class="text-justify md:text-justify text-2xl lg:text-2xl pb-16 typoParrafos px-14 py-20" data-aos="fade-down">
+        <p class="text-justify md:text-justify text-2xl lg:text-2xl py-48 typoParrafos px-14 py-20" data-aos="fade-down">
             As a speaker and consultant, Eric seamlessly blends technical expertise with empathetic leadership, empowering organizations to embrace technological advancement while staying grounded in human values. His mission is to shape a future where technology and humanity coexist harmoniously, inspiring others to create a world where technology amplifies human potential. With a BS in Electrical Engineering and an MBA, Eric's story transcends credentials, focusing on making a meaningful impact and guiding others to create a world where technology enriches the human experience.
         </p> 
     </div>
-    <div class="flex justify-center">
+    <div class="flex justify-center bg-white pt-32">
         <h1 class="text-6xl text-primary pb-8 typoLocuaz">Eric's Journey</h1>
     </div>
  
     <div id="globe-container"></div>
     
         <footer>
-            <div class="bg-secondary py-32 px-10 flex flex-col items-center text-center">
+            <div class="bg-secondary py-72 px-10 flex flex-col items-center text-center">
                  <p class="pb-10 typoParrafos text-white text-2xl"><span class="text-4xl"></span>Embark on a journey of resilience, innovation, and lifelong learning with me. <span class="text-4xl"></span></p>
             
             <button class="typoBotones py-3 px-3 bg-primary rounded-full text-white" onclick="redirect()">Parter With Erick</button>
@@ -184,7 +186,22 @@ Eric J. Rodriguez's transformative journey began in Ecuador, where a culture sho
         // Configurar la cámara
         camera.position.z = 15;
 
-        
+        function addMarker(x, y, z, label) {
+      var markerGeometry = new THREE.SphereGeometry(0.2, 32, 32);
+      var markerMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+      var marker = new THREE.Mesh(markerGeometry, markerMaterial);
+      marker.position.set(x, y, z);
+      globe.add(marker);
+
+     
+      return marker;
+    }
+
+    // Añadir marcadores (puntos) con texto
+    var marker1 = addMarker(-1, 3, 3.9, 'País 1');
+    var marker2 = addMarker(-0.8, 1.8, 4.6, 'País 2');
+    var marker3 = addMarker(2, 0, 4.6, 'País 3');
+    
     
         // Renderizar la escena
         var animate = function () {
